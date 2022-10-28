@@ -1,0 +1,66 @@
+@import "./variables";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div,
+form,
+a,
+p,
+ul,
+li,
+span,
+button,
+input {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 0.694vw; // при разрешении 1440 px  font-size = 10px, как в макете
+}
+
+body {
+    background: #141118;
+    color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: $font-h;
+    font-family: "Segoe UI Bold", sans-serif;
+    // line-height: 10em;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+p {
+    font-size: $font-p;
+    font-family: "Segoe UI Regular", sans-serif;
+    // line-height: 2.6em;
+    font-weight: 400;
+}
+
+img {
+    width: 100%;
+}
+
+ul li {
+    list-style: none;
+}
+
+:active,
+:hover,
+:focus {
+    outline: 0;
+    outline-offset: 0;
+}

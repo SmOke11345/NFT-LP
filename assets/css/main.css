@@ -1,0 +1,118 @@
+.wrapper, .header .nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+div,
+form,
+a,
+p,
+ul,
+li,
+span,
+button,
+input {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 0.694vw;
+}
+
+body {
+  background: #141118;
+  color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 7.6rem;
+  font-family: "Segoe UI Bold", sans-serif;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+p {
+  font-size: 2rem;
+  font-family: "Segoe UI Regular", sans-serif;
+  font-weight: 400;
+}
+
+img {
+  width: 100%;
+}
+
+ul li {
+  list-style: none;
+}
+
+:active,
+:hover,
+:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+.wrapper, .header .nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+@font-face {
+  font-family: "Segoe UI Regular";
+  src: url("../fonts/SegoeUI.woff") format("woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Segoe UI Bold";
+  src: url("../fonts/SegoeUI-Bold.woff") format("woff");
+  font-weight: 700;
+}
+.header {
+  padding: 4.1rem 15rem;
+}
+.header .logo {
+  width: 8.9rem;
+}
+.header .nav {
+  width: 30rem;
+}
+.header .connect {
+  background: #141118;
+  position: relative;
+  border-radius: 1rem;
+  background-clip: padding-box;
+}
+.header .connect::after {
+  position: absolute;
+  content: "";
+  background: linear-gradient(to right, #ff1f8a, #ff3eec);
+  z-index: -1;
+  border-radius: 1rem;
+  top: -0.23rem;
+  bottom: -0.23rem;
+  left: -0.23rem;
+  right: -0.19rem;
+}
+.header .connect__btn p {
+  padding: 1.5rem 2.5rem;
+}
+
+.wrapper {
+  align-items: center;
+}
+
+/*# sourceMappingURL=main.css.map */

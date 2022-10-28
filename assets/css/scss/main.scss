@@ -1,0 +1,50 @@
+@import "_normalize";
+@import "_variables";
+
+@font-face {
+    font-family: "Segoe UI Regular";
+    src: url("../fonts/SegoeUI.woff") format("woff");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Segoe UI Bold";
+    src: url("../fonts/SegoeUI-Bold.woff") format("woff");
+    font-weight: 700;
+}
+
+// header
+
+.header {
+    padding: 4.1rem 15rem;
+    .logo {
+        width: 8.9rem;
+    }
+    .nav {
+        @extend %wrapper;
+        width: 30rem;
+    }
+    .connect {
+        background: #141118;
+        position: relative;
+        border-radius: 1rem;
+        background-clip: padding-box;
+        &::after {
+            position: absolute;
+            content: "";
+            background: linear-gradient(to right, #ff1f8a, #ff3eec);
+            z-index: -1;
+            border-radius: 1rem;
+            top: -0.23rem;
+            bottom: -0.23rem;
+            left: -0.23rem;
+            right: -0.19rem;
+        }
+        &__btn p {
+            padding: 1.5rem 2.5rem;
+        }
+    }
+}
+.wrapper {
+    @extend %wrapper;
+    align-items: center;
+}
