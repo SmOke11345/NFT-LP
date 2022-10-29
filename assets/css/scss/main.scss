@@ -12,10 +12,14 @@
     font-weight: 700;
 }
 
-// header
+.container {
+    width: 114rem;
+    margin: 0 auto;
+}
 
+// header
 .header {
-    padding: 4.1rem 15rem;
+    padding: 4.1rem 0;
     .logo {
         width: 8.9rem;
     }
@@ -37,7 +41,7 @@
             top: -0.23rem;
             bottom: -0.23rem;
             left: -0.23rem;
-            right: -0.19rem;
+            right: -0.23rem;
         }
         &__btn p {
             padding: 1.5rem 2.5rem;

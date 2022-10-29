@@ -81,8 +81,13 @@ ul li {
   src: url("../fonts/SegoeUI-Bold.woff") format("woff");
   font-weight: 700;
 }
+.container {
+  width: 114rem;
+  margin: 0 auto;
+}
+
 .header {
-  padding: 4.1rem 15rem;
+  padding: 4.1rem 0;
 }
 .header .logo {
   width: 8.9rem;
@@ -105,7 +110,7 @@ ul li {
   top: -0.23rem;
   bottom: -0.23rem;
   left: -0.23rem;
-  right: -0.19rem;
+  right: -0.23rem;
 }
 .header .connect__btn p {
   padding: 1.5rem 2.5rem;
