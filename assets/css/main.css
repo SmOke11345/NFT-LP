@@ -1,4 +1,4 @@
-.wrapper, .header .nav {
+.wrapper, .header .wrapper, .header .nav {
   display: flex;
   justify-content: space-between;
 }
@@ -66,7 +66,7 @@ ul li {
   outline-offset: 0;
 }
 
-.wrapper, .header .nav {
+.wrapper, .header .wrapper, .header .nav {
   display: flex;
   justify-content: space-between;
 }
@@ -87,7 +87,7 @@ ul li {
 }
 
 .header {
-  padding: 4.1rem 0;
+  padding: 5.1rem 0;
 }
 .header .logo {
   width: 8.9rem;
@@ -115,9 +115,55 @@ ul li {
 .header .connect__btn p {
   padding: 1.5rem 2.5rem;
 }
-
-.wrapper {
+.header .wrapper {
   align-items: center;
+}
+
+.hero {
+  position: relative;
+}
+.hero__title {
+  width: 66.1rem;
+}
+.hero__btn {
+  position: relative;
+  z-index: 1;
+  width: 16.3rem;
+  border-radius: 1rem;
+  backdrop-filter: blur(6px);
+  background: linear-gradient(180deg, #ff3eec 0%, rgba(127, 52, 173, 0) 142.73%);
+}
+.hero__btn a p {
+  height: 4.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hero .wrapper-btn {
+  display: block;
+  position: absolute;
+  top: 23rem;
+  right: 27rem;
+}
+.hero .wrapper-btn .background {
+  z-index: -1;
+  width: 13.5rem;
+  height: 3rem;
+  top: 2.2rem;
+  left: 1.4rem;
+  position: absolute;
+  background: #ea5bdb;
+  backdrop-filter: blur(2.5px);
+  border-radius: 1rem;
+}
+
+.main .wrapper {
+  margin-top: 2rem;
+}
+.main .subtitle {
+  width: 33.8rem;
+  margin-top: 3rem;
 }
 
 /*# sourceMappingURL=main.css.map */
