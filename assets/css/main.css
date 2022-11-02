@@ -1,4 +1,4 @@
-.wrapper, .header .wrapper, .header .nav {
+.content-wrapper, .header .content-wrapper, .header .nav {
   display: flex;
   justify-content: space-between;
 }
@@ -66,7 +66,7 @@ ul li {
   outline-offset: 0;
 }
 
-.wrapper, .header .wrapper, .header .nav {
+.content-wrapper, .header .content-wrapper, .header .nav {
   display: flex;
   justify-content: space-between;
 }
@@ -115,8 +115,16 @@ ul li {
 .header .connect__btn p {
   padding: 1.5rem 2.5rem;
 }
-.header .wrapper {
+.header .content-wrapper {
   align-items: center;
+}
+
+.main .wrapper {
+  margin-top: 2rem;
+}
+.main .subtitle {
+  width: 33.8rem;
+  margin-top: 3rem;
 }
 
 .hero {
@@ -146,24 +154,17 @@ ul li {
   top: 23rem;
   right: 27rem;
 }
-.hero .wrapper-btn .background {
+.hero .wrapper-btn::after {
+  content: "";
   z-index: -1;
   width: 13.5rem;
   height: 3rem;
-  top: 2.2rem;
-  left: 1.4rem;
+  top: 2.3rem;
+  right: 1.5rem;
   position: absolute;
   background: #ea5bdb;
   backdrop-filter: blur(2.5px);
   border-radius: 1rem;
-}
-
-.main .wrapper {
-  margin-top: 2rem;
-}
-.main .subtitle {
-  width: 33.8rem;
-  margin-top: 3rem;
 }
 
 /*# sourceMappingURL=main.css.map */
