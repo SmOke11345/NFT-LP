@@ -227,8 +227,6 @@ ul li {
 .wrapper-cost .content-wrapper.grid {
   display: grid;
   gap: 9rem;
-  grid-template-columns: repeat(2, 1fr);
-  width: 49.6rem;
 }
 .wrapper-cost .content-wrapper.grid .cost.bottom-right {
   grid-column: 2/2;
