@@ -168,7 +168,7 @@ ul li {
 }
 
 .wrapper-card {
-  margin-top: 6rem;
+  margin-top: 5rem;
 }
 
 .cards {
@@ -212,11 +212,71 @@ ul li {
 }
 
 .cards.bottom {
-  margin-top: 20rem;
+  margin-top: 17.4rem;
 }
 
 .cards.top {
-  margin-top: -20rem;
+  margin-top: -17.4rem;
+}
+
+.wrapper-cost {
+  position: absolute;
+  right: 15rem;
+  top: 84rem;
+}
+.wrapper-cost .content-wrapper.grid {
+  display: grid;
+  gap: 9rem;
+  grid-template-columns: repeat(2, 1fr);
+  width: 49.6rem;
+}
+.wrapper-cost .content-wrapper.grid .cost.bottom-right {
+  grid-column: 2/2;
+  grid-row: 2/2;
+}
+.wrapper-cost .content-wrapper.grid .cost.bottom-left {
+  grid-column: 1/2;
+  grid-row: 2/2;
+}
+.wrapper-cost .content-wrapper.grid .cost.top-right {
+  grid-column: 2/2;
+  grid-row: 1/2;
+}
+.wrapper-cost .cost__title h2 {
+  color: #ea5bdb;
+  font-size: 3.8rem;
+  margin-bottom: 0.5rem;
+}
+.wrapper-cost .cost__subtitle, .wrapper-cost .cost__title {
+  text-align: right;
+}
+
+.contrib {
+  margin-top: 12rem;
+}
+.contrib__place-Bitcoin {
+  background: url(../img/supports/icon1.svg) no-repeat left;
+}
+.contrib__place-Etherum {
+  background: url(../img/supports/icon2.svg) no-repeat left;
+}
+.contrib__place-Dfinity {
+  background: url(../img/supports/icon3.svg) no-repeat left;
+}
+.contrib__place-BitcoinCash {
+  background: url(../img/supports/icon4.svg) no-repeat left;
+}
+.contrib__place-Cryptocom {
+  background: url(../img/supports/icon5.svg) no-repeat left;
+}
+.contrib__place-Bitcoin, .contrib__place-Etherum, .contrib__place-Dfinity, .contrib__place-BitcoinCash, .contrib__place-Cryptocom {
+  background-size: contain;
+}
+.contrib__name {
+  padding: 2.85rem 0 2.85rem 10rem;
+}
+.contrib__name.Bitcoin {
+  padding-left: 13rem;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -100,7 +100,7 @@
             top: 2.3rem;
             right: 1.5rem;
             position: absolute;
-            background: #ea5bdb;
+            background: $primary-color;
             backdrop-filter: blur(0.25rem);
             border-radius: 1rem;
         }
@@ -108,7 +108,7 @@
 }
 
 .wrapper-card {
-    margin-top: 6rem;
+    margin-top: 5rem;
 }
 
 .cards {
@@ -121,7 +121,7 @@
         top: 30.6rem;
         right: 10rem;
         position: absolute;
-        background: #ea5bdb;
+        background: $primary-color;
         backdrop-filter: blur(0.25rem);
         opacity: 0.75;
         border-radius: 1rem;
@@ -166,8 +166,77 @@
     }
 }
 .cards.bottom {
-    margin-top: 20rem;
+    margin-top: 17.4rem;
 }
 .cards.top {
-    margin-top: -20rem;
+    margin-top: -17.4rem;
+}
+
+.wrapper-cost {
+    position: absolute;
+    right: 15rem;
+    top: 84rem;
+    .content-wrapper.grid {
+        display: grid;
+        gap: 9rem;
+        grid-template-columns: repeat(2, 1fr);
+        width: 49.6rem;
+        .cost.bottom-right {
+            grid-column: 2/2;
+            grid-row: 2/2;
+        }
+        .cost.bottom-left {
+            grid-column: 1/2;
+            grid-row: 2/2;
+        }
+        .cost.top-right {
+            grid-column: 2/2;
+            grid-row: 1/2;
+        }
+    }
+    .cost {
+        &__title h2 {
+            color: $primary-color;
+            font-size: calc($font-h/2);
+            margin-bottom: 0.5rem;
+        }
+        &__subtitle,
+        &__title {
+            text-align: right;
+        }
+    }
+}
+
+// supports
+
+.contrib {
+    margin-top: 12rem;
+    &__place-Bitcoin {
+        background: url(../img/supports/icon1.svg) no-repeat left;
+    }
+    &__place-Etherum {
+        background: url(../img/supports/icon2.svg) no-repeat left;
+    }
+    &__place-Dfinity {
+        background: url(../img/supports/icon3.svg) no-repeat left;
+    }
+    &__place-BitcoinCash {
+        background: url(../img/supports/icon4.svg) no-repeat left;
+    }
+    &__place-Cryptocom {
+        background: url(../img/supports/icon5.svg) no-repeat left;
+    }
+    &__place-Bitcoin,
+    &__place-Etherum,
+    &__place-Dfinity,
+    &__place-BitcoinCash,
+    &__place-Cryptocom {
+        background-size: contain;
+    }
+    &__name {
+        padding: 2.85rem 0 2.85rem 10rem;
+    }
+    &__name.Bitcoin {
+        padding-left: 13rem;
+    }
 }
