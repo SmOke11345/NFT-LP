@@ -10,3 +10,17 @@ $('.owl-carousel').owlCarousel({
         }
     }
 });
+
+// NFT-carousel
+// const owlItem = document.querySelectorAll('.owl-item');
+
+//     for (let index = 0; index < owlItem.length; index++) {
+//         const element = owlItem[index];
+//         if (element.classList.contains('center')) {
+//             element.classList.add('visible');
+//         } else {
+//             element.classList.remove('visible');
+//         }
+//     }
+
+// ПОПРОБОВАТЬ СДЕЛАТЬ

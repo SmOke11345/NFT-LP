@@ -299,7 +299,7 @@ ul li {
   display: flex;
 }
 .owl-item__img img {
-  transition: 2s ease-in-out;
+  transition: 1s ease-in-out;
 }
 .owl-item__img img:hover {
   margin-top: -10rem;
@@ -308,6 +308,18 @@ ul li {
 
 .NFT-carousel .container:last-child {
   width: auto;
+}
+
+.visible {
+  width: 13.5rem;
+  height: 1rem;
+  opacity: 0.75;
+  backdrop-filter: blur(0.25rem);
+  background-color: #ea5bdb;
+  border-radius: 0 0 1rem 1rem;
+  position: absolute;
+  right: 45%;
+  margin-top: -1.2rem;
 }
 
 /*# sourceMappingURL=main.css.map */
