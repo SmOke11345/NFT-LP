@@ -345,6 +345,20 @@ ul li {
 
 .resently-top {
   margin-top: 17rem;
+  position: relative;
+}
+.resently-top::after {
+  content: "";
+  z-index: -1;
+  width: 13.5rem;
+  height: 11.3rem;
+  bottom: -0.7rem;
+  right: 44%;
+  position: absolute;
+  background: #ea5bdb;
+  backdrop-filter: blur(0.25rem);
+  border-radius: 1rem;
+  opacity: 0.75;
 }
 .resently-top__item {
   width: 33.8rem;
