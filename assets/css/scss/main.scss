@@ -372,3 +372,45 @@
         }
     }
 }
+
+.wrapper-sell {
+    margin-top: 12rem;
+    .sell {
+        @extend %wrapper;
+        align-items: center;
+        &__title h2 {
+            font-size: calc($font-h/2 + 1rem);
+        }
+        &__btn-all {
+            position: relative;
+            a {
+                padding: 0 2.5rem 0 0;
+                background: radial-gradient(
+                    146.11% 537.47% at 100% 50%,
+                    rgba(234, 91, 219, 0.5) 0%,
+                    rgba(20, 17, 24, 0) 100%
+                );
+                backdrop-filter: blur(1.5rem);
+                border-radius: 1rem;
+                display: block;
+                p {
+                    padding: 1.7rem 3rem;
+                    background: url(../img/arrow-right.svg) no-repeat right center;
+                }
+            }
+            &::after {
+                content: "";
+                z-index: -1;
+                width: 6rem;
+                height: 4.4rem;
+                bottom: -0.7rem;
+                right: 30%;
+                position: absolute;
+                background: $primary-color;
+                backdrop-filter: blur(0.25rem);
+                border-radius: 1rem;
+                opacity: 0.85;
+            }
+        }
+    }
+}

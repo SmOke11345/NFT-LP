@@ -1,4 +1,4 @@
-.resently-top .wrapper-name__title, .resently-top .wrapper-name__subtitle, .cards__title, .content-wrapper, .header .content-wrapper, .header .nav {
+.wrapper-sell .sell, .resently-top .wrapper-name__title, .resently-top .wrapper-name__subtitle, .cards__title, .content-wrapper, .header .content-wrapper, .header .nav {
   display: flex;
   justify-content: space-between;
 }
@@ -66,7 +66,7 @@ ul li {
   outline-offset: 0;
 }
 
-.resently-top .wrapper-name__title, .resently-top .wrapper-name__subtitle, .cards__title, .content-wrapper, .header .content-wrapper, .header .nav {
+.wrapper-sell .sell, .resently-top .wrapper-name__title, .resently-top .wrapper-name__subtitle, .cards__title, .content-wrapper, .header .content-wrapper, .header .nav {
   display: flex;
   justify-content: space-between;
 }
@@ -402,6 +402,43 @@ ul li {
 }
 .resently-top .wrapper-name__subtitle > div p {
   font-size: 1.6rem;
+}
+
+.wrapper-sell {
+  margin-top: 12rem;
+}
+.wrapper-sell .sell {
+  align-items: center;
+}
+.wrapper-sell .sell__title h2 {
+  font-size: 4.8rem;
+}
+.wrapper-sell .sell__btn-all {
+  position: relative;
+}
+.wrapper-sell .sell__btn-all a {
+  padding: 0 2.5rem 0 0;
+  background: radial-gradient(146.11% 537.47% at 100% 50%, rgba(234, 91, 219, 0.5) 0%, rgba(20, 17, 24, 0) 100%);
+  backdrop-filter: blur(1.5rem);
+  border-radius: 1rem;
+  display: block;
+}
+.wrapper-sell .sell__btn-all a p {
+  padding: 1.7rem 3rem;
+  background: url(../img/arrow-right.svg) no-repeat right center;
+}
+.wrapper-sell .sell__btn-all::after {
+  content: "";
+  z-index: -1;
+  width: 6rem;
+  height: 4.4rem;
+  bottom: -0.7rem;
+  right: 30%;
+  position: absolute;
+  background: #ea5bdb;
+  backdrop-filter: blur(0.25rem);
+  border-radius: 1rem;
+  opacity: 0.85;
 }
 
 /*# sourceMappingURL=main.css.map */
