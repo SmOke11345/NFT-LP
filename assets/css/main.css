@@ -26,7 +26,7 @@ html {
 
 body {
   background: #141118;
-  color: #ffffff;
+  color: #f2f2f2;
 }
 
 h1,
@@ -42,7 +42,7 @@ h6 {
 
 a {
   text-decoration: none;
-  color: #ffffff;
+  color: #f2f2f2;
 }
 
 p {
@@ -371,8 +371,7 @@ ul li {
   min-height: 35.4rem;
 }
 .resently-top__item-number {
-  width: 13.8rem;
-  background-size: contain;
+  width: 14.8rem;
   padding-top: 13.9rem;
   margin: -12.9rem auto 0;
 }
@@ -380,6 +379,11 @@ ul li {
   font-size: 2.5rem;
   text-align: center;
   margin-top: 9rem;
+}
+.resently-top .first,
+.resently-top .second,
+.resently-top .third {
+  background-size: contain !important;
 }
 .resently-top .third {
   background: url(../img/resently-top/img1.svg) no-repeat center;
@@ -397,11 +401,13 @@ ul li {
   margin: 2.3rem 3.1rem;
   border-radius: 1rem;
   backdrop-filter: blur(2.25rem);
-  opacity: 0.5;
+  color: #ffffff;
   background: radial-gradient(142.75% 525.12% at 50% 0%, rgba(234, 91, 219, 0.5) 0%, rgba(20, 17, 24, 0) 100%);
 }
 .resently-top .wrapper-name__subtitle > div p {
   font-size: 1.6rem;
+  color: #f2f2f2;
+  opacity: 0.7;
 }
 
 .wrapper-sell {
@@ -413,21 +419,22 @@ ul li {
 .wrapper-sell .sell__title h2 {
   font-size: 4.8rem;
 }
-.wrapper-sell .sell__btn-all {
+
+.btn {
   position: relative;
 }
-.wrapper-sell .sell__btn-all a {
+.btn a {
   padding: 0 2.5rem 0 0;
   background: radial-gradient(146.11% 537.47% at 100% 50%, rgba(234, 91, 219, 0.5) 0%, rgba(20, 17, 24, 0) 100%);
   backdrop-filter: blur(1.5rem);
   border-radius: 1rem;
   display: block;
 }
-.wrapper-sell .sell__btn-all a p {
+.btn a p {
   padding: 1.7rem 3rem;
   background: url(../img/arrow-right.svg) no-repeat right center;
 }
-.wrapper-sell .sell__btn-all::after {
+.btn::after {
   content: "";
   z-index: -1;
   width: 6rem;
@@ -439,6 +446,138 @@ ul li {
   backdrop-filter: blur(0.25rem);
   border-radius: 1rem;
   opacity: 0.85;
+}
+
+.sell-NTFs {
+  margin-top: 12rem;
+  position: relative;
+}
+.sell-NTFs::after {
+  content: "";
+  z-index: -1;
+  width: 23.7rem;
+  height: 11.3rem;
+  bottom: -0.7rem;
+  right: 40%;
+  position: absolute;
+  background: #ea5bdb;
+  backdrop-filter: blur(0.25rem);
+  border-radius: 1rem;
+  opacity: 0.75;
+}
+.sell-NTFs__item {
+  width: 33.8rem;
+  height: 25.4rem;
+  text-align: center;
+  background: radial-gradient(100% 367.85% at 0% 50%, rgba(234, 91, 219, 0.5) 0%, rgba(20, 17, 24, 0) 100%);
+  border-radius: 1rem;
+  backdrop-filter: blur(1.5rem);
+}
+.sell-NTFs__title {
+  padding-top: 17rem;
+}
+.sell-NTFs .third {
+  background: url(../img/sell-NTFs/img3.png) no-repeat top center;
+}
+.sell-NTFs .second {
+  background: url(../img/sell-NTFs/img1.png) no-repeat top center;
+}
+.sell-NTFs .first {
+  background: url(../img/sell-NTFs/img2.png) no-repeat top center;
+}
+.sell-NTFs__subtitle {
+  padding: 2.1rem 1.2rem;
+}
+.sell-NTFs__subtitle p {
+  font-size: 1.6rem;
+  opacity: 0.8;
+}
+
+.center {
+  background: radial-gradient(207.73% 100% at 57.1% 100%, rgba(234, 91, 219, 0.5) 0%, rgba(20, 17, 24, 0) 100%);
+  backdrop-filter: blur(4rem);
+}
+
+.last {
+  background: radial-gradient(100% 367.85% at 100% 50%, rgba(234, 91, 219, 0.5) 0%, rgba(20, 17, 24, 0) 100%);
+}
+
+.footer {
+  background-color: #251f29;
+  padding: 4rem 0 5rem;
+  margin-top: 17.5rem;
+}
+
+.sing-up__title h3 {
+  font-size: 2.5rem;
+}
+.sing-up__subtitle {
+  margin-top: 1.5rem;
+}
+.sing-up__subtitle p {
+  font-size: 1.6rem;
+  opacity: 0.8;
+}
+.sing-up .btn {
+  padding-right: 2rem;
+  z-index: 1;
+}
+.sing-up .btn p {
+  padding: 1rem 3rem;
+}
+.sing-up .btn::after {
+  right: 40%;
+  height: 3.8rem;
+  bottom: -0.35rem;
+}
+.sing-up .send {
+  position: relative;
+  display: flex;
+  margin-top: 3rem;
+}
+.sing-up .send input[type=submit] {
+  position: absolute;
+  opacity: 0.0001;
+  top: 0;
+  right: 4.5%;
+  height: 4.8rem;
+  width: 15.5rem;
+  border-radius: 1rem;
+  z-index: 2;
+}
+.sing-up .send input[type=email] {
+  font-family: "Segoe UI Regular";
+  font-weight: normal;
+  color: #f2f2f2;
+  font-size: 1.6rem;
+  margin-right: 2rem;
+  padding-left: 1.5rem;
+  width: 25rem;
+  height: 5rem;
+  border: 0.2rem solid rgba(242, 242, 242, 0.2);
+  border-radius: 1rem;
+  background-color: #251f29;
+}
+.sing-up .send input[type=email]::placeholder {
+  font-family: "Segoe UI Regular";
+  font-weight: normal;
+  color: #f2f2f2;
+  opacity: 0.2;
+  font-size: 1.6rem;
+}
+
+.link-footer li:not(.link-footer__title) {
+  opacity: 0.8;
+}
+.link-footer li:not(.link-footer__title) a p {
+  font-size: 1.6rem;
+  margin-top: 1rem;
+}
+.link-footer li:first-child {
+  margin-bottom: 1.7rem;
+}
+.link-footer__title p {
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=main.css.map */

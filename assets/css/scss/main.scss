@@ -129,7 +129,7 @@
     &__item {
         padding: 2.2rem 2.7rem 1.7rem;
         width: 35rem;
-        color: #f2f2f2;
+        color: $text-color;
         backdrop-filter: blur(4rem);
         border-radius: 1rem;
         background: radial-gradient(
@@ -334,8 +334,7 @@
     }
 
     &__item-number {
-        width: 13.8rem;
-        background-size: contain;
+        width: 14.8rem;
         padding-top: 13.9rem;
         margin: -12.9rem auto 0;
         h3 {
@@ -343,6 +342,11 @@
             text-align: center;
             margin-top: 9rem;
         }
+    }
+    .first,
+    .second,
+    .third {
+        background-size: contain !important;
     }
     .third {
         background: url(../img/resently-top/img1.svg) no-repeat center;
@@ -361,7 +365,7 @@
         margin: 2.3rem 3.1rem;
         border-radius: 1rem;
         backdrop-filter: blur(2.25rem);
-        opacity: 0.5;
+        color: #ffffff;
         background: radial-gradient(142.75% 525.12% at 50% 0%, rgba(234, 91, 219, 0.5) 0%, rgba(20, 17, 24, 0) 100%);
         &__title,
         &__subtitle {
@@ -369,6 +373,8 @@
         }
         &__subtitle > div p {
             font-size: calc($font-p - 0.4rem);
+            color: $text-color;
+            opacity: 0.7;
         }
     }
 }
@@ -381,36 +387,166 @@
         &__title h2 {
             font-size: calc($font-h/2 + 1rem);
         }
-        &__btn-all {
-            position: relative;
-            a {
-                padding: 0 2.5rem 0 0;
-                background: radial-gradient(
-                    146.11% 537.47% at 100% 50%,
-                    rgba(234, 91, 219, 0.5) 0%,
-                    rgba(20, 17, 24, 0) 100%
-                );
-                backdrop-filter: blur(1.5rem);
-                border-radius: 1rem;
-                display: block;
-                p {
-                    padding: 1.7rem 3rem;
-                    background: url(../img/arrow-right.svg) no-repeat right center;
-                }
+    }
+}
+.btn {
+    position: relative;
+    a {
+        padding: 0 2.5rem 0 0;
+        background: radial-gradient(146.11% 537.47% at 100% 50%, rgba(234, 91, 219, 0.5) 0%, rgba(20, 17, 24, 0) 100%);
+        backdrop-filter: blur(1.5rem);
+        border-radius: 1rem;
+        display: block;
+        p {
+            padding: 1.7rem 3rem;
+            background: url(../img/arrow-right.svg) no-repeat right center;
+        }
+    }
+    &::after {
+        content: "";
+        z-index: -1;
+        width: 6rem;
+        height: 4.4rem;
+        bottom: -0.7rem;
+        right: 30%;
+        position: absolute;
+        background: $primary-color;
+        backdrop-filter: blur(0.25rem);
+        border-radius: 1rem;
+        opacity: 0.85;
+    }
+}
+.sell-NTFs {
+    margin-top: 12rem;
+    position: relative;
+    &::after {
+        content: "";
+        z-index: -1;
+        width: 23.7rem;
+        height: 11.3rem;
+        bottom: -0.7rem;
+        right: 40%;
+        position: absolute;
+        background: $primary-color;
+        backdrop-filter: blur(0.25rem);
+        border-radius: 1rem;
+        opacity: 0.75;
+    }
+    &__item {
+        width: 33.8rem;
+        height: 25.4rem;
+        text-align: center;
+        background: radial-gradient(100% 367.85% at 0% 50%, rgba(234, 91, 219, 0.5) 0%, rgba(20, 17, 24, 0) 100%);
+        border-radius: 1rem;
+        backdrop-filter: blur(1.5rem);
+    }
+    &__title {
+        padding-top: 17rem;
+    }
+    .third {
+        background: url(../img/sell-NTFs/img3.png) no-repeat top center;
+    }
+    .second {
+        background: url(../img/sell-NTFs/img1.png) no-repeat top center;
+    }
+    .first {
+        background: url(../img/sell-NTFs/img2.png) no-repeat top center;
+    }
+    &__subtitle {
+        padding: 2.1rem 1.2rem;
+        p {
+            font-size: calc($font-p - 0.4rem);
+            opacity: 0.8;
+        }
+    }
+}
+.center {
+    background: radial-gradient(207.73% 100% at 57.1% 100%, rgba(234, 91, 219, 0.5) 0%, rgba(20, 17, 24, 0) 100%);
+    backdrop-filter: blur(4rem);
+}
+.last {
+    background: radial-gradient(100% 367.85% at 100% 50%, rgba(234, 91, 219, 0.5) 0%, rgba(20, 17, 24, 0) 100%);
+}
+
+// footer
+.footer {
+    background-color: $footer-color;
+    padding: 4rem 0 5rem;
+    margin-top: 17.5rem;
+}
+.sing-up {
+    &__title h3 {
+        font-size: calc($font-h - 5.1rem);
+    }
+    &__subtitle {
+        margin-top: 1.5rem;
+        p {
+            font-size: calc($font-p - 0.4rem);
+            opacity: 0.8;
+        }
+    }
+    .btn {
+        padding-right: 2rem;
+        z-index: 1;
+        p {
+            padding: 1rem 3rem;
+        }
+        &::after {
+            right: 40%;
+            height: 3.8rem;
+            bottom: -0.35rem;
+        }
+    }
+    .send {
+        position: relative;
+        display: flex;
+        margin-top: 3rem;
+        input[type="submit"] {
+            position: absolute;
+            opacity: 0.0001;
+            top: 0;
+            right: 4.5%;
+            height: 4.8rem;
+            width: 15.5rem;
+            border-radius: 1rem;
+            z-index: 2;
+        }
+        input[type="email"] {
+            font-family: "Segoe UI Regular";
+            font-weight: normal;
+            color: $text-color;
+            font-size: calc($font-p - 0.4rem);
+            margin-right: 2rem;
+            padding-left: 1.5rem;
+            width: 25rem;
+            height: 5rem;
+            border: 0.2rem solid rgba(242, 242, 242, 0.2);
+            border-radius: 1rem;
+            background-color: $footer-color;
+            &::placeholder {
+                font-family: "Segoe UI Regular";
+                font-weight: normal;
+                color: $text-color;
+                opacity: 0.2;
+                font-size: calc($font-p - 0.4rem);
             }
-            &::after {
-                content: "";
-                z-index: -1;
-                width: 6rem;
-                height: 4.4rem;
-                bottom: -0.7rem;
-                right: 30%;
-                position: absolute;
-                background: $primary-color;
-                backdrop-filter: blur(0.25rem);
-                border-radius: 1rem;
-                opacity: 0.85;
-            }
+        }
+    }
+}
+.link-footer {
+    li:not(.link-footer__title) {
+        opacity: 0.8;
+        a p {
+            font-size: calc($font-p - 0.4rem);
+            margin-top: 1rem;
+        }
+    }
+    li:first-child {
+        margin-bottom: 1.7rem;
+    }
+    &__title {
+        p {
+            color: #ffffff;
         }
     }
 }
