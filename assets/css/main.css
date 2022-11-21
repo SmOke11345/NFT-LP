@@ -380,11 +380,6 @@ ul li {
   text-align: center;
   margin-top: 9rem;
 }
-.resently-top .first,
-.resently-top .second,
-.resently-top .third {
-  background-size: contain !important;
-}
 .resently-top .third {
   background: url(../img/resently-top/img1.svg) no-repeat center;
 }
@@ -408,6 +403,12 @@ ul li {
   font-size: 1.6rem;
   color: #f2f2f2;
   opacity: 0.7;
+}
+
+.first,
+.second,
+.third {
+  background-size: contain !important;
 }
 
 .wrapper-sell {
@@ -498,7 +499,8 @@ ul li {
   backdrop-filter: blur(4rem);
 }
 
-.last {
+.resently-top__item:last-child,
+.sell-NTFs__item:last-child {
   background: radial-gradient(100% 367.85% at 100% 50%, rgba(234, 91, 219, 0.5) 0%, rgba(20, 17, 24, 0) 100%);
 }
 
